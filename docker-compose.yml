@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  bot:
+    container_name: bart0llo
+    image: ghcr.io/bart0llo/bart0llo:latest
+    env_file: .env
+    restart: always
+    ports:
+      - "3000:3000"
